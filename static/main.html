@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>MAIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="sideNav"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+           title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="https://w3schools.com/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"
+             alt="avatar">
+        <br>
+        <br>
+        <p class="w3-text-grey">WEAR HOUSE #1</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                class="fa fa-th-large fa-fw w3-margin-right"></i>MAIN</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                class="fa fa-user fa-fw w3-margin-right"></i>EVENTS</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                class="fa fa-envelope fa-fw w3-margin-right"></i>PROFILE</a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="close side menu" id="myOverlay"></div>
+
+<!-- Black menu -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+       class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+        <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">SETUP STREAM</a>
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">IMPORT / DATABASE</a>
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">CREDENTIALS</a>
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FACTORY RESET</a>
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-text-grey w3-hover-black">CLOSE</button>
+    </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="https://w3schools.com/w3images/avatar_g2.jpg" style="width:65px;"
+                         class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <div class="w3-section w3-bottombar w3-padding-16">
+                <span class="w3-margin-right">Filter:</span>
+                <button class="w3-button w3-black">ALL</button>
+                <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Single</button>
+                <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>4</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>6</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>8</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Prev Page
+                </button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Next Page
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-bottom w3-hide-small">
+        <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+            <a href="#home" style="width:25%" class="w3-bar-item w3-button">NETWORK | Connected</a>
+            <a href="#us" style="width:25%" class="w3-bar-item w3-button">INFO</a>
+            <button onclick="w3_open()" style="width:25%" class="w3-bar-item w3-button">SETTINGS</button>
+        </div>
+    </div>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://w3schools.com/w3images/mountains.jpg" alt="Norway" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Camera 1 (Motion detected)</b></p>
+                <p>Outside corner night mode. </p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Camera 2 Offline</b></p>
+                <p>Cannot organize stream check settings. </p>
+            </div>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="https://w3schools.com/w3images/nature.jpg" alt="Norway" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Camera 3</b></p>
+                <p>Incident detected, emergency state activated. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://w3schools.com/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Camera 4</b></p>
+                <p>Inside standby. </p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://w3schools.com/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Camera 5</b></p>
+                <p>Normal. </p>
+            </div>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="https://w3schools.com/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>NO CAMERA CLICK TO ADD</b></p>
+                <p>You can add camera rtmp protocol supported only. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_openSideNav() {
+        document.getElementById("sideNav").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_closeSideNav() {
+        document.getElementById("sideNav").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Toggle grid padding
+    function myFunction() {
+        let x = document.getElementById("myGrid");
+        if (x.className === "w3-row") {
+            x.className = "w3-row-padding";
+        } else {
+            x.className = x.className.replace("w3-row-padding", "w3-row");
+        }
+    }
+
+    // Open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("mySidebar").style.display = "block";
+        w3_closeSideNav();
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
